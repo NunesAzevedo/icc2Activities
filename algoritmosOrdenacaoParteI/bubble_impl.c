@@ -16,9 +16,28 @@ void bubble_sort(int v[], int n, Estatisticas *est)
     }
     BUTTER_LOG("Variaveis de entrada", "est->comparacoes: ", est->comparacoes);
     BUTTER_LOG("Variaveis de entrada", "est->trocas: ", est->trocas);
+
+    for(int i = 0; i < n; i++)
+    {
+      int shouldSwap = 0;
+
+      for(int j = i + 1; j < n; j++)
+      {
+        est->comparacoes++;
+        BUTTER_LOG("Estatitica", "Houve comparapcao. est->comparacoes: ", est->comparacoes);
+        if(v[i] > v[j])
+        {
+          est->trocas++;
+        BUTTER_LOG("Estatitica", "Houve troca. est->trocas: ", est->trocas);
+          v[j] = v[i];
+          v[i] = v[j];
+          shouldSwap = 1;
+        }
+        if(shouldSwap == 0) break;
+      }
+    }
+
+    BUTTER_LOG("Final do bubble sort", "Fim da ordenacao");
 }
 
-// Main para fins de depuração de código
-// int main()
-// {
-// }
+
