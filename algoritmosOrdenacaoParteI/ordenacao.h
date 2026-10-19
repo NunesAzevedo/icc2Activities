@@ -1,6 +1,8 @@
 #ifndef ORDENACAO_H
 #define ORDENACAO_H
 
+#include <stdio.h>
+
 typedef struct
 {
     long long comparacoes;
