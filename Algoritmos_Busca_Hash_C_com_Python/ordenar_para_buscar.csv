@@ -1,0 +1,11 @@
+estrategia,numero_buscas,tempo_total_ms
+sequencial,1,2.423000
+ordenar+binaria,1,1.756000
+sequencial,10,22.890000
+ordenar+binaria,10,1.690000
+sequencial,100,259.958000
+ordenar+binaria,100,1.701000
+sequencial,1000,2426.570000
+ordenar+binaria,1000,1.761000
+sequencial,5000,12430.936000
+ordenar+binaria,5000,2.068000
